@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Thrones Quiz</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="GoT.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+	<div class="container">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="row no-gutters">
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="jon.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="jaime.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="tyrion.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="baelish.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="stannis.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+			    </div>
+			    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+			    	<div class="row no-gutters">
+				        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				        	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				        		<div class="n4">
+				        		    <h1>Game of Thrones Quiz</h1>
+				        		</div>    
+				        	</div>
+				        </div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n2">
+				    			<div id="home">
+				    				<div class="n5">
+				    	                <ul>
+				    		                <li>Welcome to the Game of Thrones Quiz.</li>
+				    		                <li>Here you can know which GOT character suits your personality.</li>
+				    		                <li>You have answer few questions coming one by one on the screen.</li>
+				    		                <li>After answering all the questions you will get the result immediately.</li>
+				    	                </ul>
+				    	                <div class="bt" onclick="myFunction(0)">Start Quiz ></div>
+				    	            </div>
+				    	        </div>
+				    	        <div id="q1">
+				    	        	<div class="n6">
+				    	        	    <p>
+				    	        		    Question no. 1<br>
+				    	        		    What is your gender?<br>
+				    	        	    </p>
+				    	        	    <div id="o1">
+				    	        	        <div class="q1" onclick="myFunction(5)">Male</div>
+				    	        	        <div class="q1" onclick="myFunction(6)">Female</div><br>
+				    	        	    </div>
+				    	            </div>
+				    	        </div>
+				    	        <div id="q2">
+				    	        	<div class="n7">
+				    	        	    <p>
+				    	        		    Question no. 2<br>
+				    	        		    What do you choose between Love and Power<br>
+				    	        	    </p>
+				    	        	    <div id="o2">
+				    	        	        <div class="q2" onclick="myFunction(7)">Love</div>
+				    	        	        <div class="q2" onclick="myFunction(8)">Power</div><br>
+				    	        	    </div>
+				    	        	</div>
+				    	        </div>
+				    	        <div id="q3">
+				    	        	<div class="n8">
+				    	        	    <p>
+				    	        		    Question no. 3<br>
+				    	        		    what do you think you can win the war with your knowledge or strength?<br> 
+				    	        	    </p>
+				    	        	    <div id="o3">
+				    	        	        <div class="q3" onclick="myFunction(9)">Knowledge</div>
+				    	        	        <div class="q3" onclick="myFunction(10)">Strength</div><br>
+				    	        	    </div>
+				    	        	</div>
+				    	        </div>
+				    	        <div id="q4">
+				    	        	<div class="n9">
+				    	        	    <p>
+				    	        		    Question no. 4<br>
+				    	        		    What do you choose between Loyalty and Fame?<br>
+				    	        	    </p>
+				    	        	    <div id="o4">
+				    	        	        <div class="q4" onclick="myFunction(11)">Loyalty</div>
+				    	        	        <div class="q4" onclick="myFunction(12)">Fame</div><br>
+				    	        	    </div>
+				    	        	</div>
+				    	        </div>
+				    	        <div id="res">
+				    	        	<div class="res">
+				    	        		<h1>You are Brandon Stark.</h1>
+				    	        		<div>
+				    	        			<img src="bran.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>King of the Andals and the First Men</li>
+                                                <li>Lord of the Six Kingdoms</li>
+                                                <li>Protector of the Realm</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Samwell Tarly.</h1>
+				    	        		<div>
+				    	        			<img src="samwell.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Grand Maester</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Jon Snow.</h1>
+				    	        		<div>
+				    	        			<img src="jon.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>King in the North</li>
+                                                <li>Warden of the North</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Jaime Lannister.</h1>
+				    	        		<div>
+				    	        			<img src="jaime.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Lord Commander of the Kingsguard</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Tyrion Lannister.</h1>
+				    	        		<div>
+				    	        			<img src="tyrion.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Hand of the King</li>
+                                                <li>Master of Coin</li>
+                                                <li>Lord of Casterly Rock (claimant)</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Petyr Baelish.</h1>
+				    	        		<div>
+				    	        			<img src="baelish.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Master of Coin</li>
+                                                <li>Lord of Harrenhal</li>
+                                                <li>Lord Protector of the Vale</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Stannis Baratheon.</h1>
+				    	        		<div>
+				    	        			<img src="stannis.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Lord of Dragonstone</li>
+                                                <li>Lord Paramount of the Stormlands</li>
+                                                <li>Master of Ships</li>
+                                                <li>Lord of Storm's End</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Joffrey Baratheon.</h1>
+				    	        		<div>
+				    	        			<img src="joffrey.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Lord of the Seven Kingdoms</li>
+                                                <li>Protector of the Realm</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Catelyn Stark.</h1>
+				    	        		<div>
+				    	        			<img src="catelyn.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Lady of Winterfell</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Sansa Stark.</h1>
+				    	        		<div>
+				    	        			<img src="sansa.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Lady of Winterfell</li>
+                                                <li>Lady Regent of the North</li>
+                                                <li>Queen in the North</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Lady Brienne.</h1>
+				    	        		<div>
+				    	        			<img src="brienne.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Knight of the Seven Kingdoms</li>
+                                                <li>Lord Commander of Kingsguard </li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Arya Stark.</h1>
+				    	        		<div>
+				    	        			<img src="arya.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Princess</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Melisandre.</h1>
+				    	        		<div>
+				    	        			<img src="melisandre.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>The Red Woman</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Cersei Lannister.</h1>
+				    	        		<div>
+				    	        			<img src="cersei.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Queen of the Andals and the First Men</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Danaerys Targaryen.</h1>
+				    	        		<div>
+				    	        			<img src="danaerys.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Queen of Meereen</li>
+                                                <li>Khaleesi of the Great Grass Sea</li>
+                                                <li>Mother of Dragons</li>
+                                                <li>The Unburnt</li>
+                                                <li>Breaker of Chains</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        	<div class="res">
+				    	        		<h1>You are Margarie Tyrell.</h1>
+				    	        		<div>
+				    	        			<img src="margarie.jpeg">
+				    	        		</div>
+				    	        		<p>
+				    	        			<ul>
+				    	        				<li>Queen of the Seven Kingdoms</li>
+				    	        			</ul>
+				    	        		</p>
+				    	        	</div>
+				    	        </div>
+				    	    </div>
+				    	</div>    
+				    </div>
+			    </div>
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="danaerys.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="cersei.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="melisandre.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="arya.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="row no-gutters">
+				    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    		<div class="n1">
+				    			<img src="sansa.jpeg">
+				    		</div>
+				    	</div>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="row no-gutters">
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="n1">
+				    	<img src="joffrey.jpeg">
+				    </div>
+			    </div>
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="n1">
+				    	<img src="samwell.jpeg">
+				    </div>
+			    </div>
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="n1">
+				    	<img src="bran.jpeg">
+				    </div>
+			    </div>
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="n1">
+				    	<img src="margarie.jpeg">
+				    </div>
+			    </div>
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="n1">
+				    	<img src="catelyn.jpeg">
+				    </div>
+			    </div>
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <div class="n1">
+				    	<img src="brienne.jpeg">
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	</div>
+</header>
+
+<script>
+	var t=0;
+	function myFunction(m){
+		var home = document.getElementById("home");
+	    var q1 = document.getElementById("q1");
+	    var q2 = document.getElementById("q2");
+	    var q3 = document.getElementById("q3");
+	    var q4 = document.getElementById("q4");
+	    var res = document.getElementById("res");
+	  
+
+		if(m===0){
+			home.getElementsByClassName("n5")[0].style.display = "none";
+			q1.getElementsByClassName("n6")[0].style.display = "block";
+			o1.getElementsByClassName("bt")[0].style.display = "none";
+		}
+		if(m===5){
+			q1.getElementsByClassName("n6")[0].style.display = "none";
+			q2.getElementsByClassName("n7")[0].style.display = "block";
+		}
+		if(m===6){
+			t=t+8;
+			q1.getElementsByClassName("n6")[0].style.display = "none";
+			q2.getElementsByClassName("n7")[0].style.display = "block";
+		}
+		if(m===7){
+			q2.getElementsByClassName("n7")[0].style.display = "none";
+			q3.getElementsByClassName("n8")[0].style.display = "block";
+		}
+		if(m===8){
+			t=t+4;
+			q2.getElementsByClassName("n7")[0].style.display = "none";
+			q3.getElementsByClassName("n8")[0].style.display = "block";
+		}
+		if(m===9){
+			q3.getElementsByClassName("n8")[0].style.display = "none";
+			q4.getElementsByClassName("n9")[0].style.display = "block";		}
+		if(m===10){
+			t=t+2;
+			q3.getElementsByClassName("n8")[0].style.display = "none";
+			q4.getElementsByClassName("n9")[0].style.display = "block";
+		}
+		if(m===11){
+			q4.getElementsByClassName("n9")[0].style.display = "none";
+			res.getElementsByClassName("res")[t].style.display = "block";
+		}
+		if(m===12){
+			t=t+1;
+			q4.getElementsByClassName("n9")[0].style.display = "none";
+			res.getElementsByClassName("res")[t].style.display = "block";
+		}
+	}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

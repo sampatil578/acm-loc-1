@@ -1,0 +1,211 @@
+.n1{
+	background-color: #a9a9a9;
+	height: 120px;
+	margin: 5px;
+}
+
+.n2{
+	background-color: #a9a9a9;
+	height: 530px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.n3{
+	background-color: #a9a9a9;
+	height: 120px;
+	margin: 5px;
+}
+
+.n4{
+	background-image: linear-gradient(to right,black,grey);
+	height: 100px;
+	margin: 5px;
+	padding: 5px;
+	color:white;
+}
+
+.n6{
+	display: none;
+}
+
+.n7{
+	display: none;
+}
+
+.n8{
+	display: none;
+}
+
+.n9{
+	display: none;
+}
+
+.n6 p{
+	font-size: 32px;
+}
+
+.n7 p{
+	font-size: 32px;
+}
+
+.n8 p{
+	font-size: 32px;
+}
+
+.n9 p{
+	font-size: 32px;
+}
+.res{
+	display:none;
+}
+
+img{
+	width:100%;
+	height: 100%;
+}
+
+ul li{
+	font-size: 32px;
+}
+
+
+.bt{
+	background-color: black;
+	color: white;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	width: 38%;
+	margin-top: 20px;
+margin-left: 52%;
+margin-right: 10%;
+}
+
+
+
+.res div{
+	width: 100%;
+	padding: 0% 30%;
+	height: 200px;
+}
+
+.res p{
+	font-size: 20px;
+	padding: 5px;
+}
+
+.res h1{
+	text-align: center;
+}
+
+.q1{
+	background-color: white;
+	color: black;
+	height: 40px;
+	font-size: 20px;
+	width: 39%;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.q1:hover{
+	background-image:  linear-gradient(to right,black,grey);
+	color: white;
+}
+
+.q2{
+	background-color: white;
+	color: black;
+	height: 40px;
+	font-size: 20px;
+	width: 39%;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.q2:hover{
+	background-image:  linear-gradient(to right,black,grey);
+	color: white;
+}
+
+.q3{
+	background-color: white;
+	color: black;
+	height: 40px;
+	font-size: 20px;
+	width: 39%;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.q3:hover{
+	background-image:  linear-gradient(to right,black,grey);
+	color: white;
+}
+
+.q4{
+	background-color: white;
+	color: black;
+	height: 40px;
+	font-size: 20px;
+	width: 39%;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.q4:hover{
+	background-image:  linear-gradient(to right,black,grey);
+	color: white;
+}
+
+
+body{
+	background-image: linear-gradient(to right,black,grey);
+}
+
+@media only screen and (max-width: 991px){
+	ul li{
+		font-size: 26px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	ul li{
+		font-size: 23px;
+	}
+
+	.res div{
+		height: 150px;
+	}
+
+}
+
+@media only screen and (max-width: 575px){
+	ul li{
+		font-size: 20px;
+	}
+
+.n1 img{
+	width: 100%;
+	height: 100%;
+}
+
+	.res div img{
+		display: block;
+	}
+
+	.n1{
+		min-height: 100px;
+		max-width: 20%;
+		display: none;
+	}
+}
