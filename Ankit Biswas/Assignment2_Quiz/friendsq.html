@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>F.R.I.E.N.D.S Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quiz-css/friendq.css">
+    <link rel="icon" type="image/png" href="quiz-images/q.jpg">
+</head>
+<body>
+    <div class="container">
+        <div id="start"><h1>Start Quiz</h1></div>
+        <div id="quiz">
+            <div id="questions"></div>
+            <div id="options">
+                <button class="choices" id="c1" onclick="checkAnswer('A')"></button>
+                <button class="choices" id="c2" onclick="checkAnswer('B')"></button>
+                <button class="choices" id="c3" onclick="checkAnswer('C')"></button>
+                <button class="choices" id="c4" onclick="checkAnswer('D')"></button>
+            </div>
+            <div>
+                <button class="Nbutton" id="next">Next</button>
+                <button class="Nbutton" id="submit">Submit</button>
+                <br>
+                <br>
+                <br>
+                <footer class="foot">Question <span id="noQ"> 1</span></footer>
+            </div>
+        </div>
+        <div id="output">
+            
+        </div>
+    </div>
+    <script type="text/javascript">
+        //select all elements...
+        const Start=document.getElementById("start");
+        const Quiz= document.getElementById("quiz");
+        const Questions= document.getElementById("questions");
+        const Options= document.getElementById("options");
+        const First= document.getElementById("c1");
+        const Second= document.getElementById("c2");
+        const Third= document.getElementById("c3");
+        const Fourth= document.getElementById("c4");
+        const Next= document.getElementById("next");
+        const Submit= document.getElementById("submit");
+        const Output= document.getElementById("output");
+        const NoQ= document.getElementById("noQ");
+        
+        //questions to be asked...
+        var Q=[
+            {
+                question:"How many babies are born on the show?",
+                choiceA:"Four",
+                choiceB:"Seven",
+                choiceC:"Five",
+                choiceD:"Three",
+                correct:"B"
+            },
+            {
+                question:"Which of the designers has Rachel not worked for?",
+                choiceA:"Armani",
+                choiceB:"Bloomingdales",
+                choiceC:"Ralph Lauren",
+                choiceD:"Fortuna Fashions",
+                correct:"A"
+            },
+            {
+                question:"What is the name of Joey's agent?",
+                choiceA:"Stella",
+                choiceB:"Stephanie",
+                choiceC:"Estelle",
+                choiceD:"Stelley",
+                correct:"C"
+            },
+            {
+                question:"What is the name of Joey's soap opera?",
+                choiceA:"Brooklyn Nine-Nine",
+                choiceB:"Days of our lives",
+                choiceC:"What/If",
+                choiceD:"Game of Thrones",
+                correct:"B"
+            },
+            {
+                question:"What is the name of the neighbour who leaves everything to Monica and Rachel when he dies?",
+                choiceA:"Mr.Freckles",
+                choiceB:"Mr.Heckles",
+                choiceC:"Mr.Fickles",
+                choiceD:"Ugly Naked Guy",
+                correct:"B"
+            },
+            {
+                question:"Where does Chandler tell Janice he has been relocated to to avoid her?",
+                choiceA:"Yemen",
+                choiceB:"Tulsa",
+                choiceC:"Minsk",
+                choiceD:"Paris",
+                correct:"A"
+            },
+            {
+                question:"Which song of Phoebe's was her first and only album release?",
+                choiceA:"Jingle Bitch",
+                choiceB:"Mother's Ashes",
+                choiceC:"Smelly Cat",
+                choiceD:"Ode To a Pubic Hair",
+                correct:"C"
+            },
+            {
+                question:"What was wrong with Phoebe’s “Smelly Cat” music video?",
+                choiceA:"They replaced her voice with that of a professional singer",
+                choiceB:"They cut her out",
+                choiceC:"It was not realistic",
+                choiceD:"There was no smelly cat",
+                correct:"A"
+            },
+            {
+                question:"What was the reason behind Phoebe not believing in gravity?",
+                choiceA:"Ross is a Nerd",
+                choiceB:"She feels more pushed than pulled",
+                choiceC:"Science isn't real",
+                choiceD:"Because she says so",
+                correct:"B"
+            },
+            {
+                question:"What is the middle name of Chandler Bing?",
+                choiceA:"Dorothy",
+                choiceB:"Lillian",
+                choiceC:"Doris",
+                choiceD:"Muriel",
+                correct:"D"
+            },
+        ];
+        
+        const lastQuestion=Q.length-1;
+        var currentQuestion=0;
+        var score=0;
+        
+        //what happens when i click on start...
+        Start.onclick=function()
+        {
+            Start.style.display="none";
+            Quiz.style.display="block";
+            changeQuestion();
+        }
+        
+        //Changing inner HTML of Quiz part to change questions...
+        function changeQuestion()
+        {
+            var q=Q[currentQuestion];
+            
+            Questions.innerHTML="<h1>"+q.question+"</h1>";
+            First.innerHTML=q.choiceA;
+            Second.innerHTML=q.choiceB;
+            Third.innerHTML=q.choiceC;
+            Fourth.innerHTML=q.choiceD;
+        }
+        
+        //what happens if you click on any of the options...
+        function checkAnswer(answer)
+        {
+            First.disabled = true;
+            Second.disabled = true;
+            Third.disabled = true;
+            Fourth.disabled = true;
+            NoQ.innerHTML=currentQuestion+1+" of "+Q.length;
+            if(answer==Q[currentQuestion].correct)
+                {
+                    score++;
+                    var n= answer.charCodeAt(0)-64;
+                    document.getElementById("c"+n).style.backgroundColor="green";
+                    for(var i=1;i<=4;i++)
+                        {
+                            if(i!=n)
+                                {
+                                    document.getElementById("c"+i).style.backgroundColor="red"
+                                }
+                        }
+                }
+            else
+                {
+                    var m=Q[currentQuestion].correct.charCodeAt(0)-64;
+                    var f=answer.charCodeAt(0)-64;
+                    document.getElementById("c"+m).style.backgroundColor="green";
+                    document.getElementById("c"+f).style.backgroundColor="gray";
+                    for(var i=1;i<=4;i++)
+                        {
+                            if(i!=f&&i!=m)
+                                {
+                                    document.getElementById("c"+i).style.backgroundColor="red";
+                                }
+                        }
+                }
+            if(currentQuestion<lastQuestion)
+                {
+                    Next.style.display="block";
+                    currentQuestion++;
+                }
+        }
+        
+       //what must happen when next is clicked...
+        Next.addEventListener("click",nextQuestion);
+        
+        function nextQuestion()
+        {
+            if(currentQuestion==lastQuestion)
+                {
+                    Next.style.display="none";
+                    Submit.style.display="block";
+                }
+            NoQ.innerHTML=currentQuestion+1+" of "+Q.length;
+            for(i=1;i<=4;i++)
+                {
+                    First.style.backgroundColor="mediumpurple";
+                    Second.style.backgroundColor="mediumpurple";
+                    Third.style.backgroundColor="mediumpurple";
+                    Fourth.style.backgroundColor="mediumpurple";
+                    First.disabled = false;
+                    Second.disabled = false;
+                    Third.disabled = false;
+                    Fourth.disabled = false;
+                }
+            changeQuestion();
+        }
+        
+        //what happens when you click on Submit
+        Submit.onclick=function()
+        {
+            var percent=(score/Q.length)*100;
+            Quiz.style.display="none";
+            Output.style.display="block";
+            Output.innerHTML="<h1>Congratulations!<br>You have scored "+percent+"%";
+            
+        }
+        
+    </script>
+</body>
+</html>
