@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	  
+			  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="myScript.js"></script>
+  <style>
+  	
+  	#ques1, #ques2, #ques3, #ques4, #ques5, #ques6, #ques7, #ques8, #result{
+  		display: none;
+  	}
+    
+    #container{
+    	width: 400px;
+    	height: 580px;
+    	position: absolute;
+    	top: 50%;
+    	left: 50px;
+    	transform: translate(-50%,-50%);
+    	padding: 30px;
+
+    }
+
+  	#start{
+	max-width: 75%;
+	font-family: courier;
+	font-weight: bold;
+	
+	background-color: #f38259;
+    border-radius: 20px;
+    }
+     
+     
+    .button{
+	display: inline-block;
+	padding: 1.5em;
+	background-color: #79bd9a;
+	text-decoration: none;
+	color: white;
+
+    }
+
+    .que{
+    	font-family: courier;
+    	font-weight: bold;
+        font-size: 1.20em;
+        padding: 20px;
+    }
+
+    .option:hover{
+    	background-color: #ee6d3e;
+    	border-radius: 20px;
+    }
+
+    .option{
+    	display: inline-block;
+        padding:10px 0 10px 15px;
+    	width: 400px;
+    }
+@media only screen and (max-width : 780px){
+    .option{
+        display : inline-block;
+        width:200px;
+    }
+}
+
+  </style>
+  
+</head>
+<body>
+	<center><img src="78.png" width="20%"></center>
+	
+	<br>
+    <br>
+    <center>
+<div id="container box">
+  <br>
+  <br>
+	<center><a href="#" id="start" class="btn btn-primary btn-lg" style="margin: auto; background-color: #79bd9a;" onclick="begin();">Let's Begin</a></center>
+  <div id="start">
+  	 <form id="quiz" name="quiz">
+
+  	 	<div id="ques1">
+  	 		<p class="que">What is the largest country in the world in terms of land area?</p>
+            <p style="text-align: center;">
+            	<label class="option"><input type="radio" id="mc" name="ques1" value="A">Russia<br></label>
+            	<label class="option"><input type="radio" id="mc" name="ques1" value="B">USA<br></label>
+            	<label class="option"><input type="radio" id="mc" name="ques1" value="C">China<br></label>
+            	<label class="option"><input type="radio" id="mc" name="ques1" value="D">Canada<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Next" onclick="q2();"><br>
+            	<br>
+            </p>
+  	 	</div>
+
+  	 	<div id="ques2">
+  	 		<p class="que">Which of the following country has given first time voting rights to women?</p>
+  	 		<p style="text-align: center;">
+  	 			<label class="option"><input type="radio" id="mc2" name="ques2" value="A">USA<br></label>
+            	<label class="option"><input type="radio" id="mc2" name="ques2" value="B">France<br></label>
+            	<label class="option"><input type="radio" id="mc2" name="ques2" value="C">New Zealand<br></label>
+            	<label class="option"><input type="radio" id="mc2" name="ques2" value="D">India<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Next" onclick="q3();"><br>
+            	<br>
+            </p>
+  	 	</div>
+  	 	
+  	 	<div id="ques3">
+  	 		<p class="que">Which is the safest country in Asia?</p>
+  	 		<p style="text-align: center;">
+  	 			<label class="option"><input type="radio" id="mc3" name="ques3" value="A">China<br></label>
+            	<label class="option"><input type="radio" id="mc3" name="ques3" value="B">India<br></label>
+            	<label class="option"><input type="radio" id="mc3" name="ques3" value="C">Japan<br></label>
+            	<label class="option"><input type="radio" id="mc3" name="ques3" value="D">Korea<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Next" onclick="q4();"><br>
+            	<br>
+            </p>
+  	 	</div>
+
+  	 	<div id="ques4">
+  	 		<p class="que">Which country has highest sex ratio in world?</p>
+  	 		<p style="text-align: center;">
+  	 			<label class="option"><input type="radio" id="mc4" name="ques4" value="A">North Mariana Island<br></label>
+            	<label class="option"><input type="radio" id="mc4" name="ques4" value="B">Estonia<br></label>
+            	<label class="option"><input type="radio" id="mc4" name="ques4" value="C">USA<br></label>
+            	<label class="option"><input type="radio" id="mc4" name="ques4" value="D">India<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Next" onclick="q5();"><br>
+            	<br>
+            </p>
+  	 	</div>
+
+        <div id="ques5">
+  	 		<p class="que">Where is the official home of Santa Claus?</p>
+  	 		<p style="text-align: center;">
+  	 			<label class="option"><input type="radio" id="mc5" name="ques5" value="A">USA<br></label>
+            	<label class="option"><input type="radio" id="mc5" name="ques5" value="B">Canada<br></label>
+            	<label class="option"><input type="radio" id="mc5" name="ques5" value="C">Norway<br></label>
+            	<label class="option"><input type="radio" id="mc5" name="ques5" value="D">Finland<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Next" onclick="q6();"><br>
+            	<br>
+            </p>
+  	 	</div>
+        
+        <div id="ques6">
+  	 		<p class="que">The Sahara desert is not a part of which country?</p>
+  	 		<p style="text-align: center;">
+  	 			<label class="option"><input type="radio" id="mc6" name="ques6" value="A">Chad<br></label>
+            	<label class="option"><input type="radio" id="mc6" name="ques6" value="B">South Africa<br></label>
+            	<label class="option"><input type="radio" id="mc6" name="ques6" value="C">Morocco<br></label>
+            	<label class="option"><input type="radio" id="mc6" name="ques6" value="D">Algeria<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Next" onclick="q7();"><br>
+            	<br>
+            </p>
+  	 	</div>
+        
+        <div id="ques7">
+  	 		<p class="que">Name the world's largest ocean</p>
+  	 		<p style="text-align: center;">
+  	 			<label class="option"><input type="radio" id="mc7" name="ques7" value="A">Mediterranean sea<br></label>
+            	<label class="option"><input type="radio" id="mc7" name="ques7" value="B">Pacific sea<br></label>
+            	<label class="option"><input type="radio" id="mc7" name="ques7" value="C">Red sea<br></label>
+            	<label class="option"><input type="radio" id="mc7" name="ques7" value="D">Sea of Japan<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Next" onclick="q8();"><br>
+            	<br>
+            </p>
+  	 	</div>
+        
+        <div id="ques8">
+  	 		<p class="que">Where is the permanent seceretariat of the SAARC?</p>
+  	 		<p style="text-align: center;">
+  	 			<label class="option"><input type="radio" id="mc8" name="ques8" value="A">Kathmandu<br></label>
+            	<label class="option"><input type="radio" id="mc8" name="ques8" value="B">New Delhi<br></label>
+            	<label class="option"><input type="radio" id="mc8" name="ques8" value="C">Islamabad<br></label>
+            	<label class="option"><input type="radio" id="mc8" name="ques8" value="D">Colombo<br></label>
+            	<br>
+            	<input id="button" class="btn btn-warning" type="button" value="Submit" onclick="Submit();"><br>
+            	<br>
+            </p>
+  	 	</div>
+
+
+
+  	 </form>
+
+  	 <div id ="result" style="background-color: #ee6d3e">
+  	 	<h1 style="text-decoration: underline; font-size: 1.25em; font-weight: bold; border-top: 3px solid #333; border-bottom: 3px solid #333;">Result</h1>
+        	<p id="score" style="font-size: 0.55em;  color: #121212;"></p>
+        </div>
+  </div>
+</div>
+</body>
+</html>

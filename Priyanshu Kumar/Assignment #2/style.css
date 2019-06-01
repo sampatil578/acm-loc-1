@@ -1,0 +1,64 @@
+body{
+	background: #ee6d3e;
+	text-align: center;
+
+}
+
+.button{
+	display: inline-block;
+	padding: 1.5em;
+	background-color: #79bd9a;
+	text-decoration: none;
+	color: white;
+
+}
+
+label{
+	display: inline;
+}
+
+#next{
+	text-align: center;
+	display: inline-block;
+	border-radius: 20%;
+}
+
+#result{
+	font-family: courier;
+	font-size: 3em;
+	font-weight: bold;
+	color: #222;
+}
+
+/* might have to change later */
+input[name="option"]{
+	float: left;
+}
+
+.progress-bar{
+	float: left;
+	width: 0;
+	font-size: 12px;
+	line-height: 20px;
+	color: #444;
+	text-align: center;
+	background-color: #f38259;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	transition: width .6s ease;
+}
+
+input, select{
+	vertical-align: middle;
+}
+
+#container{
+	text-align: center;
+}
+
+#form div{
+	margin:auto;
+}
+
+.jumbotron{
+	background-color: #f38259;
+}
