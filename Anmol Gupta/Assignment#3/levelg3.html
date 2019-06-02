@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="imagehover.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .Mytext
+  {
+   animation-name: fadeInn;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+  }
+  .jumbotron
+  {
+    margin-bottom: 0px;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .glow
+    {
+     animation-name: glowing;
+     animation-duration: 4s;
+      animation-iteration-count: infinite;
+   }
+   .container-fluid {
+    padding: 60px 50px;
+  }
+   .anime
+  {
+    transition: 0.5s;
+  }
+  .anime:hover
+  {
+    box-shadow: 5px 0px 40px rgb(77, 78, 79);
+    cursor: pointer; 
+  }
+  .panel {
+    border: 4px solid #360b59; 
+    border-radius:15px !important;
+    transition: box-shadow 0.5s;
+    background-color: #9d26c1;
+    color: white;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgb(77, 78, 79);
+    cursor: pointer;
+    background-color: white;
+    color: #9d26c1;
+    transition: 0.5s;
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #9d26c1;
+    background-color: #fff !important;
+    color: #9d26c1;
+    transition: 0.5s;
+  }
+  .panel-heading {
+    color: black !important;
+    padding: 25px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .btn {
+    margin: 15px 0;
+    background-color: #9d26c1;
+    color: #fff;
+  }
+
+
+  #timer{
+    position: relative;
+    height : 100px;
+    width : 100%;
+    bottom : 0px;
+    text-align: center;
+}
+#counter{
+    font-size: 3em;
+}
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    align-self: center;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+}
+#progress{
+    width : 100%;
+    position: relative;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: center;
+}
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+.rotate
+{
+  animation-name: rotating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+   @keyframes fadeInn
+  {
+    0%
+    {
+      color:#b4b9c1;
+    }
+    50%
+    {
+      color:white;
+    }
+    100%
+    {
+      color:#b4b9c1;
+    }
+  }
+   @keyframes glowing
+    {
+      0%
+      {
+       background-color:#490e6b;
+      }
+      50%
+     {
+        background-color:#9d26c1;
+     }
+     100%
+     {
+        background-color:#490e6b;
+      }
+    }
+    @keyframes rotating
+    {
+      0%
+      {
+       transform: rotate(0deg);
+      }
+      100%
+      {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .col-sm-6 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+    
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+    .imma
+    {
+      height:70%;
+      width:70%;
+    }
+  }
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="jumbotron text-center glow">
+    <h1 style="color: white">
+      The Game
+    </h1>
+    <button class="btn btn-lg" id="start" style="background-color: red">Click to Play</button>
+  </div>
+
+<div id="game" class="container-fluid text-center slide" style="display: none;">
+  <h3 style="color: #9d26c1; ">Please left click inside the game to start it.Don't use left click during the game it is against rules and is a cheat...lol.</h3>
+  <br>
+  <br>
+  <br>  
+  <canvas id="myCanvas" width="480" height="320" style="border: 3px solid #9d26c1;"></canvas>
+</div>
+
+<div id="youlost" class="container-fluid text-center slide" style="display: none;"> 
+  <h1>You Lost</h1>
+  <br>
+  <img src="img/1.png" class="rotate">
+  <br>
+  <a href="levelg3.html">
+    <button class="btn btn-lg" id="start" style="background-color: red">Retry</button>
+  </a>
+  <br>
+  <a href="mainpc.html">
+    <button class="btn btn-lg" id="start" style="background-color: red">Main Menu</button>
+  </a>
+</div>
+
+<div id="youwon" class="container-fluid text-center slide" style="display: none;">  
+  <h1>You Won</h1>
+  <br>
+  <img src="img/5.png" class="rotate">
+  <br>
+  <a href="levelg4.html">
+    <button class="btn btn-lg" id="start" style="background-color: red">Next Level</button>
+  </a>
+  <br>
+  <a href="mainpc.html">
+    <button class="btn btn-lg" id="start" style="background-color: red">Main Menu</button>
+  </a>
+</div>
+
+
+<img src="img/833315.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up totop"></span>
+  </a>
+</footer>
+<script type="text/javascript" src="levelg3.js"></script>
+<script>
+$(document).ready(function(){
+  
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+       
+        window.location.hash = hash;
+      });
+    } 
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
