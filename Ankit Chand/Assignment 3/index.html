@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Rancho&display=swap" rel="stylesheet">
+
+	<title>Break the Brick</title>
+	<style type="text/css">
+		#head{
+			font-family: Baloo Tamma;
+			font-size: 100px;
+
+
+		}.btn-lg {
+           padding: 10px 20px;
+           font-size: 40px;
+           border-radius: 10px;
+               
+        }
+        #body{
+        	background-image: url('insbg1.jpg');
+        }
+
+		 
+
+
+	</style>
+</head>
+<body id="body">
+	<div class="jumbotron text-center">
+		<h1 id = "head">Break The Brick</h1>
+	</div>
+
+	<div class="container text-center" >
+  
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'level1.html';" >
+    	      Start Game
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'instructions.html';">Instructions</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle btn-lg " data-toggle="dropdown" >
+                    Sound
+                </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">ON</a>
+                        <a class="dropdown-item" href="#">OFF</a>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+</script>
+
+</body>
+</html>
