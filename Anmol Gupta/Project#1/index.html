@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Summer Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="imagehover.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .Mytext
+  {
+   animation-name: fadeInn;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .glow
+    {
+     animation-name: glowing;
+     animation-duration: 4s;
+      animation-iteration-count: infinite;
+   }
+   .container-fluid {
+    padding: 60px 50px;
+  }
+   .anime
+  {
+    transition: 0.5s;
+  }
+  .anime:hover
+  {
+    box-shadow: 5px 0px 40px rgb(77, 78, 79);
+    cursor: pointer; 
+  }
+  .panel {
+    border: 1px solid #9d26c1; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgb(77, 78, 79);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #9d26c1;
+    background-color: #fff !important;
+    color: #9d26c1;
+    transition: 0.5s;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #9d26c1 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #9d26c1;
+    color: #fff;
+  }
+   @keyframes fadeInn
+  {
+    0%
+    {
+      color:#b4b9c1;
+    }
+    50%
+    {
+      color:white;
+    }
+    100%
+    {
+      color:#b4b9c1;
+    }
+  }
+   @keyframes glowing
+    {
+      0%
+      {
+       background-color:#490e6b;
+      }
+      50%
+     {
+        background-color:#9d26c1;
+     }
+     100%
+     {
+        background-color:#490e6b;
+      }
+    }
+    @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+    
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+    .imma
+    {
+      height:70%;
+      width:70%;
+    }
+  }
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="jumbotron text-center glow">
+    <h1 class="Mytext">My Summer Projects</h1> 
+    <p class="Mytext">Created by Anmol Gupta</p>
+  </div>
+  <div id="pricing" class="container-fluid">
+  <div class="row slide">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>ASSIGNMENT #1</h3>
+        </div>
+        <div class="panel-body">
+          <img src="Images/ass1.png" height="90%" width="90%">
+        </div>
+        <div class="panel-footer">
+          <a href="myport.html">
+            <button class="btn btn-lg">Click to view</button>
+          </a>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>ASSIGNMENT #2</h3>
+        </div>
+        <div class="panel-body">
+          <img src="Images/ass2.jpeg" height="90%" width="90%">
+        </div>
+        <div class="panel-footer">
+          <a href="mainmenu.html">
+            <button class="btn btn-lg">Click to view</button>
+          </a>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>ASSIGNMENT #3</h3>
+        </div>
+        <div class="panel-body">
+          <img src="Images/ass3.png" width="71%">
+        </div>
+        <div class="panel-footer">
+          <a href="platform.html">
+            <button class="btn btn-lg">Click to view</button>
+          </a>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+<div id="pricing" class="container-fluid">
+  
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>PROJECT #1</h3>
+        </div>
+        <div class="panel-body">
+          <img src="Images/pro1.png" height="90%" width="90%">
+        </div>
+        <div class="panel-footer">
+          <a href="project1.html">
+            <button class="btn btn-lg">Click to view</button>
+          </a>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>PROJECT #2</h3>
+        </div>
+        <div class="panel-body">
+          <img src="Images/pro2.png" height="90%" width="90%">
+        </div>
+        <div class="panel-footer">
+          <a href="under.html">
+            <button class="btn btn-lg">Click to view</button>
+          </a>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>PROJECT #3</h3>
+        </div>
+        <div class="panel-body">
+          <img src="Images/pro3.jpg" height="71%" width="65%">
+        </div>
+        <div class="panel-footer">
+          <a href="under.html">
+            <button class="btn btn-lg">Click to view</button>
+          </a>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+<img src="Images/833315.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up totop"></span>
+  </a>
+</footer>
+<script>
+$(document).ready(function(){
+  
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+       
+        window.location.hash = hash;
+      });
+    } 
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
