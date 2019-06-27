@@ -1,0 +1,197 @@
+.header{
+	height: 100px;
+	background-color: #800000;
+	margin: 5px;
+}
+
+.header h1{
+	color: white;
+	font-size: 60px;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+.body{
+	height: 450px;
+	margin: 5px;
+	background-image: url('lib.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodys{
+	height: 450px;
+	margin: 5px;
+	background-image: url('student_login.jpeg');
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodya{
+	height: 450px;
+	margin: 5px;
+	background-image: url('admin_login.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.body img{
+	position: relative;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	opacity: 0.3;
+}
+
+.body h1{
+	z-index: 10;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+p{
+	display: block;
+	text-align: center;
+}
+
+.bodys h1{
+	z-index: 10;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.bodya h1{
+	z-index: 10;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.login input{
+	height: 30px;
+	width: 250px;
+	background-color: white;
+}
+
+.registration input{
+	height: 22px;
+	width: 250px;
+	background-color: white;
+}
+
+.login{
+	margin: 10px;
+	display: block;
+	text-align: center;
+}
+
+.registration{
+	margin: 10px;
+	display: block;
+	text-align: center;
+}
+
+.text{
+	background-color: black;
+	opacity: 0.7;
+}
+
+.sb{
+	height: 450px;
+	background-color: grey;
+	margin: 5px;
+	background-color: #800000;
+	overflow: scroll;
+}
+
+ul{
+	background-color: #800000;
+	list-style: none;
+}
+
+ul li{
+	width:100%;
+	height: 50px;
+	margin: 0px;
+	padding:10px;
+}
+
+ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+.body h1{
+	z-index: 1;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 450px) {
+	.header h1{
+		font-size: 40px;
+	}
+}
